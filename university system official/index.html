@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>University System</h1>
+        
+        <div class="form-container">
+            <h2>Add Student</h2>
+            <input type="text" id="studentName" placeholder="Name" required>
+            <input type="number" id="studentAge" placeholder="Age" required>
+            <select id="studentRole">
+                <option value="PhD">PhD</option>
+                <option value="Master's">Master's</option>
+                <option value="Bachelor's">Bachelor's</option>
+            </select>
+            <button id="addStudentBtn">Add Student</button>
+        </div>
+
+        <div class="form-container">
+            <h2>Add Professor</h2>
+            <input type="text" id="professorName" placeholder="Name" required>
+            <input type="number" id="professorAge" placeholder="Age" required>
+            <input type="text" id="professorDepartment" placeholder="Department" required>
+            <button id="addProfessorBtn">Add Professor</button>
+        </div>
+
+        <div class="info-container">
+            <h2>University Details</h2>
+            <pre id="universityDetails"></pre>
+        </div>
+
+        <div class="info-container">
+            <h2>Student List</h2>
+            <pre id="studentList"></pre>
+        </div>
+
+        <div class="info-container">
+            <h2>Professor List</h2>
+            <pre id="professorList"></pre>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
